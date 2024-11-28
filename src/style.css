@@ -15,7 +15,7 @@ html {
 body {
   overflow: hidden;
   color: rgba(255, 255, 255, 0.5);
-  font-family: "Russo One", arial, sans-serif;
+  font-family: 'Roboto Mono';
   line-height: 1.25;
   letter-spacing: 0.06em;
 }
@@ -145,6 +145,8 @@ body {
 }
 .menu__subheader {
   margin-bottom: auto;
+  text-aligh: center;
+  margin: 20px;
   padding-bottom: 12px;
   font-size: 0.86em;
   opacity: 0.8;

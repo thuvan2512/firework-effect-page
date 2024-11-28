@@ -1,7 +1,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Firework Show :: Sayn Achhava</title>
+  <title>Trình diễn pháo hoa</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -11,7 +11,8 @@
 <link rel="apple-touch-icon-precomposed" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/329180/firework-burst-icon-v2.png">
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="msapplication-TileImage" content="https://s3-us-west-2.amazonaws.com/s.cdpn.io/329180/firework-burst-icon-v2.png">
-<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel="stylesheet" href="src/style.css">
 
 </head>
@@ -44,8 +45,8 @@
 <!-- App -->
 <div class="container">
 	<div class="loading-init">
-		<div class="loading-init__header">Loading</div>
-		<div class="loading-init__status">Assembling Shells</div>
+		<div class="loading-init__header">Đang tải</div>
+		<div class="loading-init__status"></div>
 	</div>
 	<div class="stage-container remove">
 		<div class="canvas-container">
@@ -68,52 +69,53 @@
 				<div class="btn btn--bright close-menu-btn">
 					<svg fill="white" width="24" height="24"><use href="#icon-close" xlink:href="#icon-close"></use></svg>
 				</div>
-				<div class="menu__header">Settings</div>
-				<div class="menu__subheader">For more info, click any label.</div>
+				<div class="menu__header">Cài Đặt</div>
+				<div class="menu__subheader">Tùy chỉnh hiệu ứng pháo hoa, ấn vào từng mục để xem chú thích</div>
 				<form>
 					<div class="form-option form-option--select">
-						<label class="shell-type-label">Shell Type</label>
-						<select class="shell-type"></select>
+					  <label class="shell-type-label">Loại pháo hoa</label>
+					  <select class="shell-type"></select>
 					</div>
 					<div class="form-option form-option--select">
-						<label class="shell-size-label">Shell Size</label>
-						<select class="shell-size"></select>
+					  <label class="shell-size-label">Kích thước pháo hoa</label>
+					  <select class="shell-size"></select>
 					</div>
 					<div class="form-option form-option--select">
-						<label class="quality-ui-label">Quality</label>
-						<select class="quality-ui"></select>
+					  <label class="quality-ui-label">Chất lượng</label>
+					  <select class="quality-ui"></select>
 					</div>
 					<div class="form-option form-option--select">
-						<label class="sky-lighting-label">Sky Lighting</label>
-						<select class="sky-lighting"></select>
+					  <label class="sky-lighting-label">Ánh sáng bầu trời</label>
+					  <select class="sky-lighting"></select>
 					</div>
 					<div class="form-option form-option--select">
-						<label class="scaleFactor-label">Scale</label>
-						<select class="scaleFactor"></select>
+					  <label class="scaleFactor-label">Tỉ lệ</label>
+					  <select class="scaleFactor"></select>
 					</div>
 					<div class="form-option form-option--checkbox">
-						<label class="auto-launch-label">Auto Fire</label>
-						<input class="auto-launch" type="checkbox" />
+					  <label class="auto-launch-label">Tự động bắn pháo hoa</label>
+					  <input class="auto-launch" type="checkbox" />
 					</div>
 					<div class="form-option form-option--checkbox form-option--finale-mode">
-						<label class="finale-mode-label">Finale Mode</label>
-						<input class="finale-mode" type="checkbox" />
+					  <label class="finale-mode-label">Chế độ bắn dồn dập</label>
+					  <input class="finale-mode" type="checkbox" />
 					</div>
 					<div class="form-option form-option--checkbox">
-						<label class="hide-controls-label">Hide Controls</label>
-						<input class="hide-controls" type="checkbox" />
+					  <label class="hide-controls-label">Ẩn điều khiển</label>
+					  <input class="hide-controls" type="checkbox" />
 					</div>
 					<div class="form-option form-option--checkbox form-option--fullscreen">
-						<label class="fullscreen-label">Fullscreen</label>
-						<input class="fullscreen" type="checkbox" />
+					  <label class="fullscreen-label">Toàn màn hình</label>
+					  <input class="fullscreen" type="checkbox" />
 					</div>
 					<div class="form-option form-option--checkbox">
-						<label class="long-exposure-label">Open Shutter</label>
-						<input class="long-exposure" type="checkbox" />
+					  <label class="long-exposure-label">Mở màn trập</label>
+					  <input class="long-exposure" type="checkbox" />
 					</div>
-				</form>
+				  </form>
+				  
 				<div class="credits">
-					Passionately built Sayn Achhava.
+					
 				</div>
 			</div>
 		</div>
@@ -123,7 +125,7 @@
 		<div class="help-modal__dialog">
 			<div class="help-modal__header"></div>
 			<div class="help-modal__body"></div>
-			<button type="button" class="help-modal__close-btn">Close</button>
+			<button type="button" class="help-modal__close-btn">Đóng</button>
 		</div>
 	</div>
 </div>
